@@ -5,8 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "dist": "babel src -d dist",
-    "predeploy": "npm run dist && github-semantic-version",
+    "predeploy": "github-semantic-version",
     "deploy": "npm publish",
+    "prepublish": "npm run dist",
     "pretest": "npm run dist",
     "test": "ava"
   },
