@@ -1,6 +1,6 @@
 {
   "name": "express-hot-middleware",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simple way to enable hot-reloading in your Express applications.",
   "main": "dist/index.js",
   "scripts": {
