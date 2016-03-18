@@ -17,7 +17,7 @@ $ npm install --save express-hot-middleware
 
 ```js
 import express from "express";
-import { hot } from "express-hmr-middleware";
+import hot from "express-hmr-middleware";
 
 export default express()
   .use(hot(module, () => [

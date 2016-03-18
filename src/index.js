@@ -1,6 +1,6 @@
 import express from "express";
 
-export const hot = (module, callback) => {
+export default function hotMiddleware(module, callback) {
   // Enable HMR for parent module
   if (module.hot) {
     module.hot.accept();
