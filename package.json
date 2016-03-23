@@ -1,6 +1,6 @@
 {
   "name": "express-hot-middleware",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simple way to enable hot-reloading in your Express applications.",
   "main": "dist/index.js",
   "files": [
@@ -9,8 +9,7 @@
   "scripts": {
     "predist": "rimraf dist",
     "dist": "babel src -d dist",
-    "predeploy": "github-semantic-version",
-    "deploy": "npm publish",
+    "release": "github-semantic-version",
     "prepublish": "npm run dist",
     "pretest": "npm run dist",
     "test": "ava"
