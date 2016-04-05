@@ -17,7 +17,7 @@ $ npm install --save express-hot-middleware
 
 ```js
 import express from "express";
-import hot from "express-hmr-middleware";
+import hot from "express-hot-middleware";
 
 export default express()
   .use(hot(module, () => [
@@ -30,7 +30,7 @@ export default express()
 ;
 ```
 
-_Don't worry not using `import` here.  The `default` will still be used, if it exists._
+_Don't worry about not using `import` here for ES6 modules. If you export `default`, it will be used_.
 
 
 ### License
